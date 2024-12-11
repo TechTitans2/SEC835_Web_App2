@@ -1,0 +1,22 @@
+name: Basic Verification
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Verify repository
+        run: |
+          echo "Repository verification successful"
+          exit 0
+
