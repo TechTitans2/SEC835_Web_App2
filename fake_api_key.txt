@@ -1,0 +1,2 @@
+echo "FAKE_API_KEY=12345-abcde-67890-fghij" > fake_api_key.txt
+
